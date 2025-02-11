@@ -31,12 +31,30 @@
     <main>
       <h1>Welcome to Brent's Website</h1>
       <p>My name is Brent Murray and I am a computer programming student at Sault College.</p>
+      <h1>Welcome to Brent's Website</h1>
+      <p>
+        <picture>
+          <source media="(max-width: 500px)" srcset="Images/brent_150.jpg">
+          <img src="Images/brent_300.jpg" alt="Brent Murray">
+        </picture>
+      </p>
+      <p>
+        <a href="Images/brent.jpg" target="_blank">Click here to view the full-size image</a>
+      </p>
       <p>I enjoy playing soccer and doing boxing.</p>
       <p>In my freetime I play video games, my favourites are GTA V, Call of Duty and FC25.</p>
-      <h2>My Favourite Things</h2>
-      <a href="https://fcbayern.com/en">
-        <img src="Images/logo.png" alt="Bayern Munchen Logo" width="100" height="50">
-      </a>
+      <h3>Public Domain Audiobook</h3>
+      <audio controls>
+        <source src="https://ia600903.us.archive.org/25/items/multilingual_short_works_collection_011_1401_librivox/msw011_01_suratulalaq_quran_njb_64kb.mp3" type="audio/mpeg">
+        Your browser does not support audio elements.
+      </audio>
+      <p><a href="https://archive.org/download/multilingual_short_works_collection_011_1401_librivox/multilingual_short_works_collection_011_1401_librivox.m4b" download>Click here to download the audiobook</a></p>
+      <figure>
+        <a href="https://fcbayern.com/en">
+          <img src="Images/logo.png" alt="Bayern Munchen Logo" width="100" height="50">
+        </a>
+        <figcaption>Bayern Munchen Logo</figcaption>
+      </figure>      
       <h3>Naruto Characters</h3>
       <ol>
         <li>Naruto Uzumaki</li>
@@ -48,6 +66,9 @@
       <p>and realize my three children</p>
       <p>have been watching</p>
       <cite>by <span class="author">Kato Shuson</span></cite>
+      <p>YouTube Video</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/mtODX-055g8?si=uE4-CSXxXsa9bPzE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h2>My Favourite Things</h2>
     </main>
     <footer>
       <hr>
@@ -58,6 +79,13 @@
       </blockquote>
       <p><cite>&mdash; <span class="author">Rock Lee</span></cite></p>
       <p>&copy; 2025 <a href="mailto:24041113@saultcollege.ca?%20Message%20from%20CSD112%20Website">Brent Murray</a></p>
+      <picture>
+        <source srcset="Images/sc-logo.svg" type="image/svg+xml">
+        <img src="Images/sc-logo.jpg" alt="Sault College Logo" width="70">
+      </picture>      
+      <img src="Images/sc-logo.jpg" alt="Sault College Logo" 
+        srcset="Images/sc-logo.jpg 1x, Images/sc-logo@1.5x.jpg 1.5x, Images/sc-logo@2x.jpg 2x" 
+        sizes="(max-width: 600px) 70px, 100px">
     </footer>
     <a href="#top" title="Back to top">◤</a>
   </div>
