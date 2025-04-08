@@ -46,6 +46,8 @@ dl dt::after {
   body {
     background-color: var(--main-background-color);
     color: var(--text-color); 
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.3;
   }
   
   h1, h2, h3 {
@@ -54,6 +56,11 @@ dl dt::after {
   
   a {
     color: var(--link-color);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
   
   header a {
@@ -104,6 +111,10 @@ header nav a {
   padding-bottom: 0.5em; 
   padding-left: 1em; 
   padding-right: 1em; 
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 table th, table td {
@@ -155,8 +166,65 @@ select:invalid {
   background-color: #ff0000; 
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
 
+ol {
+  list-style-type: upper-roman;
+}
 
+iframe {
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
 
+fieldset ul {
+  padding: 0;
+  list-style-type: none;
+}
 
-  
+h1 {
+  background: linear-gradient(to right, #00fff9, #fbff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bio {
+  column-count: 3;
+  column-gap: 2em;
+}
+
+.full-column {
+  column-span: all;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img {
+  max-width: 100%;
+}
+
+.picture-of-me {
+  padding: 2%;
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+
+footer {
+  font-size: 75%;
+  text-align: center;
+}
+
+footer a.back-to-top {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+  text-decoration: none;
+}
+
+footer a.back-to-top:hover {
+  text-decoration: none;
+}
