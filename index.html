@@ -38,136 +38,153 @@
       <div class="bio">
         <h1>Welcome to Brent's Website</h1>
         <p>My name is Brent Murray and I am a computer programming student at Sault College.</p>
-        <h1>Welcome to Brent's Website</h1>
         <p>
-          <picture>
-            <source media="(max-width: 500px)" srcset="Images/brent_150.jpg">
-            <img class="picture-of-me" src="Images/brent_300.jpg" alt="Brent Murray">
-          </picture>
-        </p>
+          <a href="Images/brent.jpg" target="_blank">
+            <picture>
+              <source media="(max-width: 500px)" srcset="Images/brent_150.jpg">
+              <img class="picture-of-me" src="Images/brent_300.jpg" alt="Brent Murray">
+            </picture>
+            <img src="Images/paperclip.png" alt="Paperclip" class="paperclip">
+          </a>
+        </p>        
         <p>
           <a href="Images/brent.jpg" target="_blank">Click here to view the full-size image</a>
         </p>
         <h2>My Favourite Things</h2>
-        <p>I enjoy playing soccer and doing boxing.</p>
-        <p>In my freetime I play video games, my favourites are GTA V, Call of Duty and FC25.</p>
-        <h3>Public Domain Audiobook</h3>
-        <audio controls>
-          <source
-            src="https://ia600903.us.archive.org/25/items/multilingual_short_works_collection_011_1401_librivox/msw011_01_suratulalaq_quran_njb_64kb.mp3"
-            type="audio/mpeg">
-          Your browser does not support audio elements.
-        </audio>
-        <p><a
-            href="https://archive.org/download/multilingual_short_works_collection_011_1401_librivox/multilingual_short_works_collection_011_1401_librivox.m4b"
-            download>Click here to download the audiobook</a></p>
-        <figure>
-          <a href="https://fcbayern.com/en">
-            <img src="Images/logo.png" alt="Bayern Munchen Logo" width="100" height="50">
-          </a>
-          <figcaption>Bayern Munchen Logo</figcaption>
-        </figure>
-        <h3>Naruto Characters</h3>
-        <ol>
-          <li>Naruto Uzumaki</li>
-          <li>Rock Lee</li>
-          <li>Shikamaru Nara</li>
-        </ol>
-        <h3>Haiku</h3>
-        <p>
-          I kill an ant<br>and realize my three children<br>have been watching<br>
-          <cite>by <span class="author">Kato Shuson</span></cite>
-        </p>
-        <p>YouTube Video</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mtODX-055g8?si=uE4-CSXxXsa9bPzE"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <div id="making-a-table" class="full-column">
-          <figure>
-            <table>
-              <thead>
-                <tr>
-                  <th>Term</th>
-                  <th>Code</th>
-                  <th>Name</th>
-                  <!--- Using credits instead of hours-->
-                  <th>Credits</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td rowspan="6">Fall</td>
-                  <td>CMM115</td>
-                  <td>Communications I</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>CSD110</td>
-                  <td>Introduction to Programming</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>CSD113</td>
-                  <td>Computing Environments and Tools</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>CSD122</td>
-                  <td>Hardware, OS, and Networks</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td>MTH123</td>
-                  <td>Computer Mathematics</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>TNY130</td>
-                  <td>Technology in Society</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td rowspan="6">Winter</td>
-                  <td>CSD125</td>
-                  <td>Emerging Technology</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>CSD124</td>
-                  <td>Systems Analysis and Design</td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td>CSD123</td>
-                  <td>Databases</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>CSD121</td>
-                  <td>Programming Concepts</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>CSD112</td>
-                  <td>Introduction to Web Design</td>
-                  <td>4</td>
-                </tr>
-                <tr>
-                  <td>CSA103</td>
-                  <td>Business Applications</td>
-                  <td>4</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td colspan="3" style="text-align: center;"><strong>Total</strong></td>
-                  <td><strong>44</strong></td>
-                </tr>
-              </tfoot>
-            </table>
-            <figcaption>Table 1. Current Courses</figcaption>
-          </figure>
+        <div class="favourites">
+          <p>I enjoy playing soccer and doing boxing.</p>
+          <p>In my freetime I play video games, my favourites are GTA V, Call of Duty and FC25.</p>
+          <input type="radio" name="fav-tab" id="tab1" checked>
+          <label for="tab1"><h3>Public Domain Audiobook</h3></label>
+          <div>
+            <audio controls>
+              <source
+                src="https://ia600903.us.archive.org/25/items/multilingual_short_works_collection_011_1401_librivox/msw011_01_suratulalaq_quran_njb_64kb.mp3"
+                type="audio/mpeg">
+              Your browser does not support audio elements.
+            </audio>
+            <p><a
+                href="https://archive.org/download/multilingual_short_works_collection_011_1401_librivox/multilingual_short_works_collection_011_1401_librivox.m4b"
+                download>Click here to download the audiobook</a></p>
+          </div>
+          <input type="radio" name="fav-tab" id="tab2">
+          <label for="tab2"><h3>My favourite futbol club</h3></label>
+          <div>
+            <figure>
+              <a href="https://fcbayern.com/en">
+                <img src="Images/logo.png" alt="Bayern Munchen Logo" width="100" height="50">
+              </a>
+              <figcaption>Bayern Munchen Logo</figcaption>
+            </figure>
+          </div>
+          <input type="radio" name="fav-tab" id="tab3">
+          <label for="tab3"><h3>Naruto Characters</h3></label>
+          <div>
+            <ol>
+              <li>Naruto Uzumaki</li>
+              <li>Rock Lee</li>
+              <li>Shikamaru Nara</li>
+            </ol>
+          </div>
+          <input type="radio" name="fav-tab" id="tab4">
+          <label for="tab4"><h3>Haiku</h3></label>
+          <div>
+            <p>
+              I kill an ant<br>and realize my three children<br>have been watching<br>
+              <cite>by <span class="author">Kato Shuson</span></cite>
+            </p>
+          </div>
+          <p>YouTube Video</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mtODX-055g8?si=uE4-CSXxXsa9bPzE"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div id="making-a-table" class="full-column">
+            <figure>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Term</th>
+                    <th>Code</th>
+                    <th>Name</th>
+                    <!--- Using credits instead of hours-->
+                    <th>Credits</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="6">Fall</td>
+                    <td>CMM115</td>
+                    <td>Communications I</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>CSD110</td>
+                    <td>Introduction to Programming</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>CSD113</td>
+                    <td>Computing Environments and Tools</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>CSD122</td>
+                    <td>Hardware, OS, and Networks</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>MTH123</td>
+                    <td>Computer Mathematics</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>TNY130</td>
+                    <td>Technology in Society</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="6">Winter</td>
+                    <td>CSD125</td>
+                    <td>Emerging Technology</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>CSD124</td>
+                    <td>Systems Analysis and Design</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>CSD123</td>
+                    <td>Databases</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>CSD121</td>
+                    <td>Programming Concepts</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>CSD112</td>
+                    <td>Introduction to Web Design</td>
+                    <td>4</td>
+                  </tr>
+                  <tr>
+                    <td>CSA103</td>
+                    <td>Business Applications</td>
+                    <td>4</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="3" style="text-align: center;"><strong>Total</strong></td>
+                    <td><strong>44</strong></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <figcaption>Table 1. Current Courses</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </main>
@@ -187,7 +204,7 @@
           sizes="(max-width: 600px) 70px, 100px">
       </picture>
     </footer>
-    <a href="#top" title="Back to top">◤</a>
+    <a href="#top" id="back-to-top" title="Back to top">◤</a>
   </div>
 </body>
 

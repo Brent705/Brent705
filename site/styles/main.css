@@ -90,10 +90,11 @@ header nav {
 header nav ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul li {
-  display: inline-block;
   list-style-type: none;
 }
 
@@ -235,4 +236,127 @@ footer a.back-to-top {
 
 footer a.back-to-top:hover {
   text-decoration: none;
+}
+
+.favourites > label + div {
+  display: none;
+}
+
+.favourites input[type="radio"]:checked + label + div {
+  display: block;
+}
+
+.favourites {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.favourites label {
+  order: -1;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  color: var(--heading-color);
+}
+
+.favourites input:checked + label + div {
+  display: block;
+  width: 100%; 
+}
+
+.favourites input:checked + label {
+  color: var(--link-color); 
+  border-bottom: 3px solid var(--link-color); 
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.favourites div {
+  display: none; 
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  transition: all 0.3s ease;
+}
+
+.favourites label:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+input[type="radio"] {
+  opacity: 0; 
+  position: absolute; 
+  pointer-events: none; 
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row-span-2 {
+  grid-row: span 2;
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.gallery .row-span-2 {
+  grid-row: span 2;
+}
+
+.gallery .col-span-2 {
+  grid-column: span 2;
+}
+
+.gallery a:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+
+.paperclip {
+  background: none;
+  box-shadow: none;
+  width: 20%;
+  height: auto;  
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+}
+
+.bio a {
+  display: block;
+  position: relative;
+}
+
+#back-to-top {
+  position: sticky; 
+  bottom: 10px; 
+  margin-left: -25px; 
+  display: inline-block; 
+}
+
+#back-to-top:hover {
+  transform: rotate(45deg); 
 }
